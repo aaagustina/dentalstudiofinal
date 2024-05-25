@@ -488,10 +488,14 @@ button:hover {
 @media (max-width: 576px) {
     .contact-info {
 
-        max-width: 80%;
+        max-width: 95%;
         background-color:  rgba(213, 179, 245, 0.2);
         margin-top: 10px;
     }
+    .tittlecontact {
+        font-weight: 10px;
+    }
+  
  }
 
 
@@ -608,6 +612,12 @@ button:hover {
     margin-top: 20px;
 }
 @media (max-width: 576px) {
+
+
+    .section-tittle {
+        font-size: 45px;
+        
+    }
     .tratamientos-cards-container {
         flex-direction: column;
         align-items: center;
