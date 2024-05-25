@@ -359,6 +359,7 @@ button:hover {
     height: auto;
 }
 
+
 .card-content h3 {
     text-align: center;
     color: var(--gris);
@@ -371,12 +372,13 @@ button:hover {
 .card-content p {
 
     color: var(--gris);
-    font-weight:300;
+    font-weight:400;
     font-size: 15px;
-    line-height: 1.3;
+    line-height: 1.4;
     text-align:center;
     margin-left: 15px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .product-price {
@@ -385,11 +387,10 @@ button:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 10px;
+    padding-bottom: 0px;
+    padding-top: 20px;
 }
-.pricelimpieza {
-    margin-bottom: 0px;
-}
+
 .oferta {
     background-color: var(--btn);
     color: var(--background);
@@ -400,7 +401,7 @@ button:hover {
 }
 
 #producto3 {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 
@@ -425,16 +426,37 @@ button:hover {
 .card-content .btn-container {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    margin: 10px;
+    align-items:start;
+
+   
 }
 
 #medio {
-    margin-top: 23px;
+    margin-top: 20px;
 }
 
 #medio2 {
-    margin-top: 0px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#medio1 {
+    margin-top: 14px;
+}
+
+#productprice {
+    margin-top: 30px;
+}
+
+@media (max-width: 375px)
+
+{
+    .btn {
+        margin-bottom: 20px;
+    }
+    #nuestros-servicios h2 {
+        font-size: 40px;
+    }
 }
 
 /*CONTACTO*/
@@ -485,15 +507,14 @@ button:hover {
 .registrarse {
     margin-bottom: 20px;
 }
-@media (max-width: 576px) {
+@media (max-width: 375px) {
     .contact-info {
 
         max-width: 95%;
-        background-color:  rgba(213, 179, 245, 0.2);
         margin-top: 10px;
     }
     .tittlecontact {
-        font-weight: 10px;
+        font-size: 38px;
     }
   
  }
@@ -615,7 +636,7 @@ button:hover {
 
 
     .section-tittle {
-        font-size: 45px;
+        font-size: 38px;
         
     }
     .tratamientos-cards-container {
