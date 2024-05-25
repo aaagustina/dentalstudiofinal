@@ -141,7 +141,7 @@ button:hover {
     margin-top: 30px;
 }
 
-@media (max-width:576px) {
+@media screen and (max-width:575px)  {
 
 
     .navbar ul {
@@ -203,7 +203,7 @@ button:hover {
 }
 
 .about-text h1 {
-    font-size: 31px;
+    font-size: 38px;
     font-weight: 600;
     line-height: 45px;
     color:transparent;
@@ -214,7 +214,7 @@ button:hover {
 }
 
 .about-text span {
-    font-size: 64px;
+    font-size: 54px;
     word-spacing: 11px;
     background: linear-gradient(45deg, #A163F5, #D8A1DD, #d5b3f5);
     -webkit-background-clip: text;
@@ -224,10 +224,9 @@ button:hover {
 
 .about-text p {
     margin: 1rem 0 1rem 0;
-    font-weight: 500;
-    font-size: 15px;
+    font-weight: 400;
+    font-size: 13px;
     color: var(--gris);
-    
     text-align:center;
 }
 
@@ -293,6 +292,9 @@ button:hover {
 
         .about-text h1 {
             font-size: 28px;
+        }
+        .about-text span {
+            font-family: 38px;
         }
 
         .about-text {
@@ -448,14 +450,24 @@ button:hover {
     margin-top: 30px;
 }
 
-@media (max-width: 375px)
+@media screen and (max-width:575px)
 
 {
-    .btn {
-        margin-bottom: 20px;
-    }
     #nuestros-servicios h2 {
         font-size: 40px;
+    }
+
+   
+
+    #medio1 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+      
+    }
+    #medio {
+      
+        margin-bottom: 30px;
+       
     }
 }
 
@@ -713,16 +725,17 @@ button:hover {
     text-transform: uppercase;
     margin-bottom:5px;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 15px;
 }
 
 .p-footer {
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 2px;
     text-align: center;
     margin: 5px 0;
     color: var(--gris);
-    cursor: pointer;   
+    cursor: pointer;
+    font-size: 12;   
 }
 
 #pfooter:hover {
@@ -733,8 +746,9 @@ button:hover {
     padding-top: 10px;
     color: var(--secondary);
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
     background-color: none;
+    font-size: 14px;
 }
 .divider {
     width: 50%;
@@ -775,11 +789,11 @@ button:hover {
 
 .footer-nav-link {
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .p-footer {
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 }
 }

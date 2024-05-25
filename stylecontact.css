@@ -249,6 +249,12 @@ form button:hover {
 
 }
 
+
+.boton:hover {
+    background-color: var(--btn);
+}
+
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -282,16 +288,17 @@ form button:hover {
     text-transform: uppercase;
     margin-bottom:5px;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 15px;
 }
 
 .p-footer {
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 2px;
     text-align: center;
     margin: 5px 0;
     color: var(--gris);
-    cursor: pointer;   
+    cursor: pointer;
+    font-size: 12;   
 }
 
 #pfooter:hover {
@@ -302,8 +309,9 @@ form button:hover {
     padding-top: 10px;
     color: var(--secondary);
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
     background-color: none;
+    font-size: 14px;
 }
 .divider {
     width: 50%;
@@ -344,11 +352,11 @@ form button:hover {
 
 .footer-nav-link {
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .p-footer {
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 }
 }
