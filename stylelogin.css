@@ -80,7 +80,6 @@ header {
     border-bottom: 1 px solid silver;
     font-size: 2rem;
     margin-top: 50px;
-    font-weight: 600;
     background: linear-gradient(45deg, #A163F5, #D8A1DD, #d5b3f5);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -167,7 +166,7 @@ form button:hover {
 
 
 
-@media screen and (max-width:800px) { 
+@media screen and (max-width:575px) { 
 
 
 

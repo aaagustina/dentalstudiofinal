@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="./styleregister.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="./index.html">
+                <img src="./img/logo.png" alt="logo" class="logo"></a>
+            </nav>
+    </header>
+
+    <main class="main"> 
+        <div class="registrarse">
+        <h1 class="registrarse-title">Registrarse</h1>
+
+
+        <form>
+            <div class="user-details">
+                <div class="input-box">
+                <span class="details">Nombre</span>
+              <input type="text" required
+              placeholder="Escribe tu nombre">
+            </div>
+            <div class="input-box">
+                <span class="details">Usuario</span>
+              <input type="text" required
+              placeholder="Escribe un usuario">
+            </div>
+            <div class="input-box">
+                <span class="details">Email</span>
+              <input type="email" required
+              placeholder="Escribe tu email">
+            </div>
+            <div class="input-box">
+                <span class="details">Celular</span>
+              <input type="text" required
+              placeholder="Escribe tu celular">
+            </div>
+            <div class="input-box">
+                <span class="details">Contraseña</span>
+              <input type="password" required
+              placeholder="Escribe tu contraseña">
+            </div>
+            <div class="input-box">
+                <span class="details">Confirma tu contraseña</span>
+              <input type="password" required
+              placeholder="Escribe tu contraseña">
+            </div>
+        </div>
+        <div class="genero-details">
+            <input type="radio" name="genero" id="elegir-1" class="radio">
+            <input type="radio" name="genero" id="elegir-2" class="radio">
+            <input type="radio" name="genero" id="elegir-3" class="radio">
+            <span class="genero-title">Genero</span>
+            <div class="categoria">
+                <label for="elegir-1">
+                    <span class="elegir uno"></span>
+                    <span class="genero">Hombre</span>
+                </label>
+                <label for="elegir-2">
+                    <span class="elegir dos"></span>
+                    <span class="genero">Mujer</span>
+                </label>
+                <label for="elegir-3">
+                    <span class="elegir tres"></span>
+                    <span class="genero">Prefiero no decirlo</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="button">
+            <input type="submit" value="Registrarse">
+        </div>
+        </form>
+    </main>  
+    
+    <footer class="footer">
+  
+        <ul class="footer-nav">
+          <li class="footer-nav-item"><a href="#" class="footer-nav-link">Ubicación</a>
+            <p class="p-footer">Av. Siempre Viva 742</p>
+            <p class="p-footer">San Miguel de Tucumán</p>
+            <p class="p-footer">Tucumán</p>
+          </li>
+      
+          <li class="footer-nav-item"><a href="#" class="footer-nav-link">Servicios</a>
+          <a href="#" class="p-footer" id="pfooter">Muelas del juicio</a>
+          <a href="#"class="p-footer" id="pfooter">Ortodoncía</a>
+          <a href="#" class="p-footer" id="pfooter">Blanqueamiento</a>
+          <a href="#" class="p-footer"id="pfooter">Implantes</a>
+        </li>
+      
+      
+          <li class="footer-nav-item"><a href="#" class="footer-nav-link">Horarios</a>
+          <p class="p-footer">Lunes a Sábados</p>
+          <p class="p-footer">08:00 a 20:00</p>
+        </li>
+        </ul>
+      
+        <span class="divider"></span>
+        <p class="footer-p">Hecho con amor 💜</p>
+      </footer>
+</body>
+</html>

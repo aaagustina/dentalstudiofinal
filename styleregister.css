@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+--background:#F5F5F5;
+--negro:#000000;
+--primary:#EFBAD3;
+--secondary:#B074EE;
+--btn:#A163F5;
+--claro:#D8A1DD;
+--violeta:#832BFF;
+--clarito:#d5b3f5;
+--gris:#666;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:'Poppins';
+}
+
+body {
+    font-family: 'Poppins';
+    background-image: url(./img/fondo.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--gris);
+}
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    background:none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+}
+
+
+.logo {
+    height: 70px;
+    
+
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.registrarse 
+{
+   position: absolute;
+   top: 50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+   background-color: rgba(213, 183, 255, 0.3); 
+   border-radius: 10px;
+   width: 50%;
+   height: 100%;
+   margin-top: 50px;
+   padding: 20px;
+}
+
+.registrarse-title {
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    background: linear-gradient(45deg, #A163F5, #D8A1DD, #d5b3f5);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.registrarse form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box {
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+    
+
+}
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--claro);
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom-width: 1px;
+    transition: all 0.3s ease;
+
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid
+{
+    border-color: var(--btn);
+}
+
+form .genero-details .genero-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+form .genero-details .categoria {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.genero-details .categoria label {
+    display: flex;
+    align-items: center;
+
+}
+.details {
+    font-size: 15px;
+    color: var(--gris);
+}
+.genero-title {
+    color: var(--gris);
+    text-transform: uppercase;
+}
+
+
+.genero-details .categoria .elegir {
+    height: 18px;
+    width: 18px;
+    background-color: #fffefed5;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#elegir-1:checked ~ .categoria label .uno,
+#elegir-2:checked ~ .categoria label .dos,
+#elegir-3:checked ~ .categoria label .tres{ 
+
+    border-color: #e3e1e1;
+    background-color: var(--clarito);
+}
+
+.radio {
+    display: none;
+}
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: var(--background);
+    border: 0px solid var(--violeta);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    background-color: var(--clarito);
+    text-transform: uppercase;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+
+form .button input:hover {
+    background-color: var(--btn);
+    transition: all 0.4s linear;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(213, 179, 245, 0.5); 
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px 20px;    
+}
+
+.footer-nav {
+    display: flex;
+    margin-top: 30px;
+    padding: 0;
+    width: 100%;
+    height: 60%;
+    justify-content: space-around;
+    background-color:none;
+    
+}
+.footer-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.footer-nav-link {
+    color: var(--secondary);
+    text-transform: uppercase;
+    margin-bottom:5px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.p-footer {
+    font-weight: 400;
+    margin-top: 2px;
+    text-align: center;
+    margin: 5px 0;
+    color: var(--gris);
+    cursor: pointer;   
+}
+
+#pfooter:hover {
+    text-decoration: underline;
+
+}
+.footer-p {
+    padding-top: 10px;
+    color: var(--secondary);
+    text-align: center;
+    font-weight: 600;
+    background-color: none;
+}
+.divider {
+    width: 50%;
+    height: 0.5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--background);
+    display: inline-block;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+@media (max-width: 576px) {
+    /* Ajustes para dispositivos móviles */
+    .registrarse {
+        height: 100%;
+        width: 95%;
+        margin-top: 70px;
+    }
+    
+    .details {
+        font-weight: 500; 
+    }
+    
+    form {
+        width: 95%;
+        height: 95%;
+        font-size: 12px;
+        padding-top: 0;
+        
+    }
+    
+    form .details {
+        font-size: 12px;
+    }
+    
+    form .input-box input {
+        font-size: 12px; /
+        padding: 8px; 
+    }
+    
+    form .input-box input::placeholder {
+        font-size: 10px; 
+    }
+    
+    .footer {
+        max-height: 90%;
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        max-width: 80%;
+        margin-top: 5px;
+    }
+    
+    .footer-nav-item {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    .footer-nav-link {
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .p-footer {
+        font-size: 12px;
+        text-align: center;
+    }
+
+   form .button {
+        margin-top: 10px;
+    }
+}
